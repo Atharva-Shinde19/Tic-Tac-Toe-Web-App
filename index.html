@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <header>
+        Tic Tac Toe
+    </header>
+
+    <div class="container">
+        <div class="choose-player">
+            <label for="playerSelect">Choose Starting Player:</label>
+            <select id="playerSelect">
+                <option value="X">Player X</option>
+                <option value="O">Player O</option>
+            </select>
+        </div>
+        <div class="game-container" id="gameContainer"></div>
+        <div class="status" id="status"></div>
+        <div class="button-group">
+            <button class="button" id="restartButton">Restart</button>
+            <button class="button" id="homeButton">Home</button>
+            <button class="button" id="shareButton">Share</button>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+            <h3>Leaderboard</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Wins</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Player X</td>
+                        <td id="playerXWins">0</td>
+                    </tr>
+                    <tr>
+                        <td>Player O</td>
+                        <td id="playerOWins">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Tic Tac Toe Game | CODECRAFT INFOTECH | Designed by Atharva Shinde
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
